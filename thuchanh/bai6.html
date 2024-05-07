@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký thành viên</title>
+<style>
+  caption {
+    background-color: #66CCFF;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+  }
+
+  table {
+    border: 5px solid #66CCFF;
+    width: 500px;
+  }
+
+  .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+<form action="" method="post">
+  <table>
+    <caption><h3>Đăng Ký Thông tin người sử dụng</h3></caption>
+    <tr>
+      <td width="150">Họ và Tên</td>
+      <td><input type="text" name="fullName" id="fullName" size="30" /></td>
+    </tr>
+    <tr>
+      <td>Tên đăng nhập</td>
+      <td><input type="text" name="userName" id="userName" size="30" /></td>
+    </tr>
+    <tr>
+      <td>Mật khẩu</td>
+      <td><input type="password" name="pass" id="pass" size="30" /></td>
+    </tr>
+    <tr>
+      <td>Email</td> 
+      <td><input type="email" name="email" id="email" size="30" /></td>
+    </tr>
+    <tr>
+      <td>Giới tính</td>
+      <td>
+        <input type="radio" name="gender" id="male" value="1" /> <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="0" /> <label for="female">Nữ</label>
+      </td>
+    </tr>
+    <tr>
+        <td>Độ tuổi</td>
+        <td>
+          <input type="radio" name="age" id="age1" value="1" /> <label for="age1">dưới 13</label>
+          <input type="radio" name="age" id="age2" value="0" /> <label for="age2">13-17</label>
+          <input type="radio" name="age" id="age3" value="0" /> <label for="age3">18-25</label>
+          <input type="radio" name="age" id="age4" value="0" /> <label for="age4">tren 25</label>
+        </td>
+      </tr>
+    <tr>
+      <td>Sở thích</td>
+      <td>
+        <input type="checkbox" name="amnhac" id="amnhac" /> <label for="amnhac">Nghe nhạc</label>
+        <input type="checkbox" name="game" id="game" /> <label for="game">Game</label>
+        <input type="checkbox" name="thethao" id="thethao" /> <label for="thethao">Thể thao</label>
+        <input type="checkbox" name="dulich" id="dulich" /> <label for="dulich">Du lịch</label>
+      </td>
+    </tr>
+    <tr>
+      <td>Nghề nghiệp</td>
+      <td>
+        <select name="province" id="province">
+          <option value="">---Chọn ngành nghề---</option>
+          <option value="a">a</option> 
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option> 
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Mô tả bản thân</td>
+      <td><textarea name="description" id="description" cols="40" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Đăng ký" name="register" /> 
+        <input type="reset" value="Làm Lại" name="reset" />
+      </td>
+    </tr>
+  </table>
+</form>
+</div>
+</body>
+</html>
